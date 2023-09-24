@@ -55,7 +55,7 @@ function handleResize() {
     
     if (windowWidth <= 1000) { // Adjust the breakpoint as needed
         mobileHeader.style.display = 'flex';
-        sidebar.style.transform = 'translateX(-100%)'
+        sidebar.style.transform = 'translateX(-200%)'
         content.style.position= 'absolute';
         content.style.paddingLeft = '0';
 

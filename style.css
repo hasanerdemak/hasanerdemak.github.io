@@ -180,6 +180,8 @@ h3 {
 
 h4 {
     font-weight: 500;
+    font-size: 90%;
+    padding: 0% 5%
 }
 
 @media(max-width: 500px) {
@@ -359,7 +361,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .sidebar h1 {
     text-align: center;
-    font-size: 24px;
+    font-size: 100%;
+    padding: 0% 5%;
 }
 
 .tabs {
@@ -370,7 +373,7 @@ body:not(.user-is-tabbing) a:focus {
 .tab {
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 10%;
     text-align: center;
     font-size: 100%;
     background-color: transparent;
@@ -408,6 +411,18 @@ body:not(.user-is-tabbing) a:focus {
     height: 100%;
     width: 2px;
     background-color: var(--blue);
+}
+
+@media(max-width: 1000px) {
+    .tab {
+        font-size: 75%;
+        padding: 5%;
+    }
+}
+@media(max-width: 500px) {
+    .tab {
+        font-size: 25%;
+    }
 }
 
 /* Content styles */
