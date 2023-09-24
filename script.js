@@ -36,7 +36,7 @@ function toggleSidebar() {
     content.style.paddingLeft = '0';
 
     if (sidebar.style.transform === 'translateX(0px)') {
-        sidebar.style.transform = 'translateX(-100%)'
+        sidebar.style.transform = 'translateX(-200%)'
     } else {
         sidebar.style.transform = 'translateX(0px)';
     }
@@ -95,7 +95,7 @@ openSidebarButton.addEventListener('click', () => {
         isSidebarOpen = true;
     } else {
         // Sidebar'ı kapat
-        sidebar.style.transform = 'translateX(-100%)';
+        sidebar.style.transform = 'translateX(-200%)';
         isSidebarOpen = false;
     }
 });
@@ -110,7 +110,7 @@ sidebar.addEventListener('click', () => {
         isSidebarOpen = true;
     } else {
         // Sidebar'ı kapat
-        sidebar.style.transform = 'translateX(-100%)';
+        sidebar.style.transform = 'translateX(-200%)';
         isSidebarOpen = false;
     }
 });
