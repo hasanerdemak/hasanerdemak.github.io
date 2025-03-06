@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         <div className="text-content">
           <h1>Hasan Erdem Ak</h1>
           <p>
-            Welcome to my homepage. I'm Hasan Erdem Ak, a software engineer
+            Welcome to my homepage. I'm Hasan Erdem Ak, a software developer
             based in Ankara, Turkey, with a deep passion for crafting innovative
             solutions and pushing the boundaries of technology.
           </p>

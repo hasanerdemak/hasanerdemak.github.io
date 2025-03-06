@@ -17,7 +17,7 @@ const About: React.FC = () => {
         <div className="about-text">
           <h2>About Me</h2>
           <p>
-            As a software engineer, I have extensive experience with C#, Java,
+            As a software developer, I have extensive experience with C#, Java,
             C, Python, Unity, .NET, WPF, and Django, and have applied these
             tools to a variety of academic and personal projects. Through my
             coursework and extracurricular activities, I have gained expertise
