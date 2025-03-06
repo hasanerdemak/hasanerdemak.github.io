@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Project } from "../types/types";
+import { Project } from "../../types/types";
 import ProjectDetailsModal from "./ProjectDetailsModal";
-
 interface ProjectCardProps {
   project: Project;
 }

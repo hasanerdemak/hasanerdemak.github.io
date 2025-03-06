@@ -1,19 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Project, ProjectsResponse } from "../types/types";
+import React, { useState } from "react";
+import { projects } from "../../data/projects";
 import ProjectCard from "./ProjectCard";
 
 const Projects: React.FC = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
   const [filter, setFilter] = useState<string>("all");
-
-  useEffect(() => {
-    fetch("/assets/data/projects.json")
-      .then((response) => response.json() as Promise<ProjectsResponse>)
-      .then((data) => setProjects(data.projects))
-      .catch((error) => console.error("Error fetching projects:", error));
-
-    //setProjects(projectsData.projects);
-  }, []);
 
   const filteredProjects = projects.filter((project) => {
     if (filter === "all") return true;

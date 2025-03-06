@@ -1,7 +1,6 @@
 import React from "react";
 import { Modal } from "reactstrap";
-
-import { Project } from "../types/types";
+import { Project } from "../../types/types";
 
 interface ProjectDetailsModalProps {
   project: Project | null;
