@@ -26,7 +26,8 @@ jobs:
           git config --global user.email "hasanerdemak@gmail.com"
           git config --global user.name "Hasan Erdem AK"
 
-      - name: Deploy
-        run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build Project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        run: npx gh-pages -d build --repo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/hasanerdemak/hasanerdemak.github.io.git
