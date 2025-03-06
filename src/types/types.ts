@@ -1,11 +1,21 @@
-export interface ExperiencesResponse {
-  experiences: Experience[];
+export interface Project {
+  id: string;
+  title: string;
+  summary: string;
+  description: string;
+  image: string;
+  siteLink: string | null;
+  repoLink: string | null;
+  downloadLink: string | null;
+  technologies: string[];
+  detailImages: string[];
+  categories: string[];
 }
 
 export interface Experience {
   company: string;
   position: string;
-  projects?: ProjectReference[];
+  projects?: Project[];
   startDate: string;
   endDate: string;
   responsibilities?: string[];
@@ -17,28 +27,7 @@ export interface ProjectReference {
   name: string;
 }
 
-export interface ProjectsResponse {
-  projects: Project[];
-}
-
-export interface Project {
-  id: string;
-  title: string;
-  summary: string;
-  description: string;
-  technologies: string[];
-  repoLink: string;
-  downloadLink: string;
-  image: string;
-  detailImages?: string[];
-  categories: string[];
-}
-
-export interface TechStackResponse {
-  techstack: TechStackItem[];
-}
-
-export interface TechStackItem {
+export interface Skill {
   name: string;
   badge: string;
 }
