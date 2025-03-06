@@ -21,6 +21,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Set Git Identity
+        run: |
+          git config --global user.email "hasanerdemak@gmail.com"
+          git config --global user.name "Hasan Erdem AK"
+
       - name: Deploy
         run: npm run deploy
         env:
