@@ -18,7 +18,7 @@ const Header: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="#experience" className="nav-link">
+              <a href="#experiences" className="nav-link">
                 Experience
               </a>
             </li>
