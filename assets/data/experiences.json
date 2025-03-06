@@ -1,0 +1,46 @@
+{
+  "experiences": [
+    {
+      "company": "Bumper Technology",
+      "position": "Back-End Developer Intern",
+      "projects": [
+        { "id": "freerun", "name": "FreeRun" },
+        { "id": "freerun", "name": "asdada" },
+        { "id": "freerusn", "name": "sşldgsd0psdgşlsd" }
+      ],
+      "startDate": "2022-09",
+      "endDate": "2022-12",
+      "responsibilities": [
+        "Developing applications for the company's admin panel using Python and Django",
+        "Working with HTML, CSS, JavaScript, SQL, Docker, etc.",
+        "Following the MVT pattern"
+      ],
+      "logo": "/assets/images/companyLogos/bumper.png"
+    },
+    {
+      "company": "Innova IT Solutions",
+      "position": "Front-End Developer Intern",
+      "projects": [{ "id": "lega", "name": "Lega" }],
+      "startDate": "2022-01",
+      "endDate": "2022-04",
+      "responsibilities": [
+        "Resolving front-end issues by writing code in TypeScript within the Angular framework",
+        "Focusing on debugging"
+      ],
+      "logo": "/assets/images/companyLogos/innova.png"
+    },
+    {
+      "company": "SimBT Simulation Science and Technologies Ltd.",
+      "position": "Full-Stack Developer Intern",
+      "projects": [{ "id": "kegm-ds", "name": "KEGM DS" }],
+      "startDate": "2021-05",
+      "endDate": "2021-09",
+      "responsibilities": [
+        "Developing WPF applications in the .NET environment, handling hotfixes, resolving bugs, and conducting performance analysis",
+        "Adding new features to the simulation environment",
+        "Ensuring code quality and performance optimizations"
+      ],
+      "logo": "/assets/images/companyLogos/simbt.png"
+    }
+  ]
+}
