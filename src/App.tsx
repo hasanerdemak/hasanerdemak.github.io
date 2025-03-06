@@ -6,7 +6,7 @@ import Experience from "./components/Experiences";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects/Projects";
 
 const App: React.FC = () => {
   return (

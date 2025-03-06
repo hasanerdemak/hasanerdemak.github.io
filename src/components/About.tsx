@@ -1,16 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { TechStackItem } from "../types/types";
+import React from "react";
+import { skills } from "../data/skills";
 
 const About: React.FC = () => {
-  const [techstack, setTechstack] = useState<TechStackItem[]>([]);
-
-  useEffect(() => {
-    fetch("assets/data/techstack.json")
-      .then((response) => response.json())
-      .then((data) => setTechstack(data.techstack))
-      .catch((error) => console.error("Error fetching techstack:", error));
-  }, []);
-
   return (
     <section id="about" className="section about-section">
       <div className="container about-container">
@@ -36,11 +27,11 @@ const About: React.FC = () => {
           >
             My Resume
           </a>
-          <h3>Tech Stack</h3>
-          <div id="techstack-container" className="tech-stack">
-            {techstack.map((tech, idx) => (
-              <div key={idx} className="tech-item">
-                <img src={tech.badge} alt={tech.name} title={tech.name} />
+          <h3>Skills</h3>
+          <div id="skills-container" className="skills">
+            {skills.map((skill, idx) => (
+              <div key={idx} className="skill">
+                <img src={skill.badge} alt={skill.name} title={skill.name} />
               </div>
             ))}
           </div>

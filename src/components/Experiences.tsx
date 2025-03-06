@@ -1,23 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Experience } from "../types/types";
+import React from "react";
+import { experiences } from "../data/experiences";
 
 const Experiences: React.FC = () => {
-  const [experiences, setExperiences] = useState<Experience[]>([]);
-
-  useEffect(() => {
-    fetch("/assets/data/experiences.json")
-      .then((response) => {
-        console.log("Response:", response);
-        return response.json();
-      })
-      .then((data) => setExperiences(data.experiences))
-      .catch((error) => console.error("Error fetching experience:", error));
-  }, []);
-
-  useEffect(() => {
-    console.log("Experiences:", experiences);
-  }, [experiences]);
-
   const formatDateRange = (startDate: string, endDate: string): string => {
     const start = new Date(startDate);
     const end = new Date(endDate);
@@ -25,10 +9,9 @@ const Experiences: React.FC = () => {
       month: "short",
       year: "numeric",
     };
-    return `${start.toLocaleDateString(
-      undefined,
-      options
-    )} - ${end.toLocaleDateString(undefined, options)}`;
+    return `${start.toLocaleDateString(undefined, options)} - ${
+      endDate ? end.toLocaleDateString(undefined, options) : "Present"
+    }`;
   };
 
   return (
@@ -63,7 +46,7 @@ const Experiences: React.FC = () => {
                           className="experience-project-link"
                           data-project-id={proj.id}
                         >
-                          {proj.name}
+                          {proj.title}
                         </li>
                       ))}
                     </ul>
