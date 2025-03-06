@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { Project } from "../../types/types";
 import ProjectDetailsModal from "./ProjectDetailsModal";
+
 interface ProjectCardProps {
   project: Project;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [openDetailsModal, setOpenDetailsModal] = useState<boolean>(false);
-  const openProjectDetails = () => {
-    // Burada modal açma işlevini tetikleyebilirsiniz.
-    // Örneğin, global state veya context üzerinden modal yönetimi yapılabilir.
+  const [isSummaryExpanded, setIsSummaryExpanded] = useState<boolean>(false);
+  const charachterLimit = 100;
 
-    setOpenDetailsModal(true);
-    console.log("Open project details for", project.id);
+  const toggleSummary = () => {
+    setIsSummaryExpanded(!isSummaryExpanded);
   };
 
   return (
@@ -21,16 +21,32 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       data-project-id={project.id}
       data-category={project.categories.join(",")}
     >
-      {project.image && (
-        <div className="project-image">
+      <div className="project-image">
+        {project.image ? (
           <img src={project.image} alt={project.title} />
-        </div>
-      )}
+        ) : (
+          <div className="no-image-placeholder">No Image Available</div> // Yedek arka plan
+        )}
+      </div>
       <div className="project-info">
         <h3>{project.title}</h3>
-        <p>{project.summary}</p>
+        <p>
+          {isSummaryExpanded
+            ? project.summary
+            : project.summary.length > charachterLimit
+            ? `${project.summary.slice(0, charachterLimit)}...`
+            : project.summary}
+          {project.summary.length > charachterLimit && (
+            <i onClick={toggleSummary} className="show-more">
+              {isSummaryExpanded ? "Show Less" : "Show More"}
+            </i>
+          )}
+        </p>
         <div className="project-links">
-          <button className="btn details-btn" onClick={openProjectDetails}>
+          <button
+            className="btn details-btn"
+            onClick={() => setOpenDetailsModal(true)}
+          >
             Go to Details
           </button>
         </div>

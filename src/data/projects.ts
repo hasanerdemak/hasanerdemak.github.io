@@ -7,7 +7,7 @@ export const projects: Project[] = [
     summary: "",
     description:
       "Developed a software platform for Securitas, a global leader in security solutions, as part of Siren IT Solutions. The platform enables administrative employees to securely record and report work-related transactions while allowing field employees to fulfill and document operational tasks. It enhances workflow efficiency and department-wide communication. As a Full-Stack Developer, contributed to both the back-end (C#, .NET, Entity Framework) and front-end (React, TypeScript), focusing on security, usability, and scalability. Designed and implemented a secure, user-friendly internal web portal that aligns with Securitas’ high standards for operational excellence.",
-    image: "/assets/images/projectImages/freeRun/FreeRun-project-photo.png",
+    image: "",
     siteLink: null,
     repoLink: null,
     downloadLink: null,
