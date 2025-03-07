@@ -1,7 +1,11 @@
 import React from "react";
 import { skills } from "../data/skills";
+import { getCategoryDescription } from "../utils/utils";
 
 const About: React.FC = () => {
+  // Tüm kategorileri (enum) unique şekilde alalım
+  const categories = Array.from(new Set(skills.map((s) => s.category)));
+
   return (
     <section id="about" className="section about-section">
       <div className="container about-container">
@@ -27,11 +31,27 @@ const About: React.FC = () => {
           >
             My Resume
           </a>
+
           <h3>Skills</h3>
-          <div id="skills-container" className="skills">
-            {skills.map((skill, idx) => (
-              <div key={idx} className="skill">
-                <img src={skill.badge} alt={skill.name} title={skill.name} />
+          <div id="skills-container" className="skills-container">
+            {categories.map((category) => (
+              <div key={category} className="skill-category">
+                {/* Enum değerini açıklama ile göster */}
+                <h4>{getCategoryDescription(category)}</h4>
+
+                <div className="skill-items">
+                  {skills
+                    .filter((skill) => skill.category === category)
+                    .map((skill, idx) => (
+                      <div key={idx} className="skill">
+                        <img
+                          src={skill.badge}
+                          alt={skill.name}
+                          title={skill.name}
+                        />
+                      </div>
+                    ))}
+                </div>
               </div>
             ))}
           </div>

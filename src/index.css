@@ -487,19 +487,48 @@ header {
   margin-bottom: 1rem;
   color: #666;
 }
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-.skills img {
-  height: 30px;
-}
 .about-image img {
   width: 300px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+/* Skills Container genel ayarlar */
+.skills-container {
+  margin-top: 1.5rem;
+}
+
+/* Her bir kategori için başlık ve layout */
+.skill-category {
+  margin-bottom: 2rem;
+}
+
+.skill-category h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: #2a9fd6; /* Örnek bir kategori başlık rengi */
+}
+
+/* Skill item'ların yerleşimi */
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill {
+  transition: transform 0.2s;
+  border-radius: 4px;
+}
+
+.skill img {
+  height: 30px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.skill:hover {
+  transform: translateY(-3px);
 }
 
 /* -----------------------------

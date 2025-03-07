@@ -30,4 +30,16 @@ export interface ProjectReference {
 export interface Skill {
   name: string;
   badge: string;
+  category: SkillCategory;
+}
+
+export enum SkillCategory {
+  PROGRAMMING_LANGUAGES = "PROGRAMMING_LANGUAGES",
+  WEB_TECHNOLOGIES = "WEB_TECHNOLOGIES",
+  FRAMEWORKS_LIBRARIES = "FRAMEWORKS_LIBRARIES",
+  DATABASES = "DATABASES",
+  OPERATING_SYSTEMS = "OPERATING_SYSTEMS",
+  TOOLS_IDES = "TOOLS_IDES",
+  DATA_SCIENCE_ML = "DATA_SCIENCE_ML",
+  CONCEPTS_METHODS = "CONCEPTS_METHODS",
 }
