@@ -504,14 +504,15 @@ header {
   margin-bottom: 1rem;
   color: #666;
 }
-/* .about-image {
-  flex: 1;
+.about-image {
   display: flex;
   justify-content: center;
-} */
+  align-items: center;
+  max-width: 30%;
+}
 .about-image img {
   width: 100%;
-  max-width: 300px; /* İsteğe bağlı maksimum genişlik */
+  max-width: 300px;
   border-radius: 50%;
   object-fit: cover;
 }
