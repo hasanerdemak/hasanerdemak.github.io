@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import About from "./components/About";
+import About from "./components/About/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experiences";
 import Footer from "./components/Footer";

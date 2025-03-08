@@ -1,12 +1,11 @@
 import React from "react";
-import { skills } from "../data/skills";
-import { getCategoryDescription } from "../utils/utils";
+import Skills from "./Skills";
 
 const About: React.FC = () => {
   return (
     <section id="about" className="section about-section">
       <div className="container">
-        {/* Üst kısımda About metni ve resim yan yana */}
+        {/* About metni ve resim yan yana */}
         <div className="about-container">
           <div className="about-text">
             <h2>About Me</h2>
@@ -45,30 +44,7 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Aşağıda ayrı bir satırda Skills bölümü */}
-        <div className="skills-section">
-          <h3>Skills</h3>
-          <div id="skills-container" className="skills-container">
-            {skills.map((categoryGroup) => (
-              <div key={categoryGroup.category} className="skill-card">
-                <h4>{getCategoryDescription(categoryGroup.category)}</h4>
-                <div className="skill-items">
-                  {categoryGroup.skills.map((skill, idx) => (
-                    <div key={idx} className="skill">
-                      <img
-                        src={skill.badge}
-                        alt={skill.name}
-                        title={skill.name}
-                      />
-                      {/* Görünmez fakat arama yapılabilir metin */}
-                      <span className="sr-only">{skill.name}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <Skills />
       </div>
     </section>
   );
