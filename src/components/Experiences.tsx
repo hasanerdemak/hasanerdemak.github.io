@@ -1,19 +1,8 @@
 import React from "react";
 import { experiences } from "../data/experiences";
+import { formatDateRange } from "../utils/dateUtils";
 
 const Experiences: React.FC = () => {
-  const formatDateRange = (startDate: string, endDate: string): string => {
-    const start = new Date(startDate);
-    const end = new Date(endDate);
-    const options: Intl.DateTimeFormatOptions = {
-      month: "short",
-      year: "numeric",
-    };
-    return `${start.toLocaleDateString(undefined, options)} - ${
-      endDate ? end.toLocaleDateString(undefined, options) : "Present"
-    }`;
-  };
-
   return (
     <section id="experiences" className="section experiences-section">
       <div className="container">
