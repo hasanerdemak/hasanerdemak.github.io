@@ -27,10 +27,14 @@ export interface ProjectReference {
   name: string;
 }
 
+export interface SkillCategoryGroup {
+  category: SkillCategory;
+  skills: Skill[];
+}
+
 export interface Skill {
   name: string;
   badge: string;
-  category: SkillCategory;
 }
 
 export enum SkillCategory {
