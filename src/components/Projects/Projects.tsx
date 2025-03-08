@@ -29,6 +29,7 @@ const Projects: React.FC = () => {
         <div className="project-filters">
           {filterButtons.map((btn) => (
             <button
+              id={`filter-btn-${btn.value}`}
               key={btn.value}
               className={`filter-btn ${filter === btn.value ? "active" : ""}`}
               onClick={() => setFilter(btn.value)}

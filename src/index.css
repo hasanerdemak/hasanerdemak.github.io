@@ -813,6 +813,6 @@ footer p {
   }
 }
 .highlight {
-  animation: highlightPulse 2s ease-in-out 2;
+  animation: highlightPulse 2s linear 2;
   border-radius: 5px;
 }

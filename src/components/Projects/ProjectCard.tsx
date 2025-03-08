@@ -17,6 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
   return (
     <div
+      id={`project-${project.id}`}
       className="project-card"
       data-project-id={project.id}
       data-category={project.categories.join(",")}

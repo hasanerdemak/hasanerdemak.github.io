@@ -1,8 +1,25 @@
 import React from "react";
 import { experiences } from "../data/experiences";
 import { formatDateRange } from "../utils/dateUtils";
+import { sleep } from "../utils/sleep";
 
 const Experiences: React.FC = () => {
+  // Projeye tıklandığında ilgili proje kartını bulup, kaydırma ve highlight etme
+  const handleProjectClick = async (projectId: string) => {
+    const projectsAllFilterBtn = document.getElementById("filter-btn-all");
+    (projectsAllFilterBtn as HTMLButtonElement).click();
+    await sleep(100);
+
+    const projectElement = document.getElementById(`project-${projectId}`);
+    if (projectElement) {
+      projectElement.scrollIntoView({ behavior: "smooth", block: "center" });
+      projectElement.classList.add("highlight");
+      setTimeout(() => {
+        projectElement.classList.remove("highlight");
+      }, 4000);
+    }
+  };
+
   return (
     <section id="experiences" className="section experiences-section">
       <div className="container">
@@ -34,6 +51,7 @@ const Experiences: React.FC = () => {
                           key={idx}
                           className="experience-project-link"
                           data-project-id={proj.id}
+                          onClick={() => handleProjectClick(proj.id)}
                         >
                           {proj.title}
                         </li>
