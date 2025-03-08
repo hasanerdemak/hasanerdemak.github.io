@@ -1,37 +1,29 @@
 import React from "react";
 
+const navItems = [
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
+];
+
 const Header: React.FC = () => {
   return (
     <header>
       <div className="container header-container">
-        <h1 className="logo">Hasan Erdem Ak</h1>
+        <h1 className="logo" style={{ marginBottom: 0 }}>
+          <a href="#home">Hasan Erdem Ak</a>
+        </h1>
         <nav>
           <ul className="nav-links">
-            <li>
-              <a href="#home" className="nav-link">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="nav-link">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#experiences" className="nav-link">
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="nav-link">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="nav-link">
-                Contact
-              </a>
-            </li>
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <a href={item.href} className="nav-link">
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>

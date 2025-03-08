@@ -54,6 +54,10 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75px;
 }
 .header-container {
   display: flex;
@@ -342,12 +346,12 @@ header {
 }
 
 /* -----------------------------
-     Experiences Section (Light Mode)
+     Experience Section (Light Mode)
 ------------------------------ */
-.experiences-section {
+.experience-section {
   background-color: #fff;
 }
-.experiences-section h2 {
+.experience-section h2 {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.5rem;

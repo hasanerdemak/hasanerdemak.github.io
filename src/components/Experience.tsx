@@ -3,7 +3,7 @@ import { experiences } from "../data/experiences";
 import { formatDateRange } from "../utils/dateUtils";
 import { sleep } from "../utils/sleep";
 
-const Experiences: React.FC = () => {
+const Experience: React.FC = () => {
   // Projeye tıklandığında ilgili proje kartını bulup, kaydırma ve highlight etme
   const handleProjectClick = async (projectId: string) => {
     const projectsAllFilterBtn = document.getElementById("filter-btn-all");
@@ -21,10 +21,10 @@ const Experiences: React.FC = () => {
   };
 
   return (
-    <section id="experiences" className="section experiences-section">
+    <section id="experience" className="section experience-section">
       <div className="container">
         <h2>Work Experience</h2>
-        <div id="experiences-container" className="timeline">
+        <div id="experience-container" className="timeline">
           {experiences.map((exp, index) => (
             <div key={index} className="timeline-item">
               <div className="timeline-logo-date">
@@ -78,4 +78,4 @@ const Experiences: React.FC = () => {
   );
 };
 
-export default Experiences;
+export default Experience;
