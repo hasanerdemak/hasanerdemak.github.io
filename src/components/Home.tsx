@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Home: React.FC = () => {
+  const fullText =
+    "Hi, I'm Hasan Erdem Ak, a software developer from Ankara, Turkey.";
+  const [displayedText, setDisplayedText] = useState("");
+  const [typingFinished, setTypingFinished] = useState(false);
+
+  useEffect(() => {
+    let index = 0;
+    const intervalId = setInterval(() => {
+      setDisplayedText(fullText.slice(0, index + 1));
+      index++;
+      if (index === fullText.length) {
+        setTypingFinished(true);
+        clearInterval(intervalId);
+      }
+    }, 50);
+    return () => clearInterval(intervalId);
+  }, [fullText]);
+
   return (
     <section id="home" className="section home-section">
       <div className="container home-content">
@@ -10,19 +28,9 @@ const Home: React.FC = () => {
         <div className="text-content">
           <h1>Hasan Erdem Ak</h1>
           <p>
-            Welcome to my homepage. I'm Hasan Erdem Ak, a software developer
-            based in Ankara, Turkey, with a deep passion for crafting innovative
-            solutions and pushing the boundaries of technology.
+            {displayedText}
+            {!typingFinished && <span className="cursor">|</span>}
           </p>
-          <p>
-            <strong>My Areas of Interest:</strong>
-          </p>
-          <ul>
-            <li>Back-End Development</li>
-            <li>Full-Stack Development</li>
-            <li>Game Development</li>
-            <li>AI, ML, DL, NLP</li>
-          </ul>
         </div>
       </div>
     </section>

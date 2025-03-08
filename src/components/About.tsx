@@ -22,6 +22,15 @@ const About: React.FC = () => {
               success of any team I am a part of and am always eager to take on
               new challenges and learn from others.
             </p>
+            <p>
+              <strong>Areas of Interest:</strong>
+            </p>
+            <ul>
+              <li>Back-End Development</li>
+              <li>Full-Stack Development</li>
+              <li>Game Development</li>
+              <li>AI, ML, DL, NLP</li>
+            </ul>
             <a
               href="/assets/cv/Hasan_Erdem_Ak_CV_Eng.pdf"
               className="btn"
