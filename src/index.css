@@ -620,64 +620,50 @@ header {
 /* -----------------------------
      Project Details Modal
 ------------------------------ */
-.project-details-tab {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 2000;
-  padding: 1rem;
-}
-.project-details-content {
-  background-color: #fff;
+.project-details-modal .modal-content {
   border-radius: 5px;
-  width: 90%;
-  max-width: 800px;
-  height: 80vh;
-  overflow-y: auto;
-  position: relative;
-  padding: 2rem;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
-.close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: #2a9fd6;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-.close-btn:hover {
-  color: #1d7ca7;
-}
-.project-details-content h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
-.project-details-content p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: #666;
-  text-align: justify;
-}
-.project-details-content img {
+
+/* Main Image */
+.modal-main-image {
   max-width: 100%;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
 
-/* Additional Images in a horizontal row */
+/* Description */
+.modal-description {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #666;
+  text-align: justify;
+}
+
+/* Technologies list */
+.modal-technologies ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Links row (repo, download, etc.) */
+.modal-links {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+/* Additional Images */
+.additional-images-section {
+  margin-top: 1.5rem;
+}
+
 .project-gallery-wrapper {
   position: relative;
 }
+
 .project-gallery {
   display: flex;
   gap: 1rem;
@@ -689,6 +675,7 @@ header {
 .project-gallery:active {
   cursor: grabbing;
 }
+
 .gallery-item {
   flex: 0 0 auto;
   width: 240px;
@@ -701,14 +688,16 @@ header {
   justify-content: center;
   position: relative;
 }
+
 .gallery-item img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   pointer-events: none;
+  user-select: none;
 }
 
-/* Magnifier on hover (centered over image) */
+/* Optional: magnifier icon on hover */
 .gallery-item:hover::after {
   content: "\1F50D";
   position: absolute;
@@ -719,15 +708,6 @@ header {
   color: rgba(42, 159, 214, 0.8);
 }
 
-/* Hide arrow buttons if only one image */
-.single-image .gallery-arrow {
-  display: none !important;
-}
-.single-image .project-gallery {
-  justify-content: center;
-}
-
-/* Arrow Buttons for Additional Images */
 .gallery-arrow {
   position: absolute;
   top: 50%;
@@ -746,6 +726,7 @@ header {
   justify-content: center;
   transition: background 0.2s;
   line-height: 0;
+  z-index: 10;
 }
 .gallery-arrow:hover {
   background: rgba(255, 255, 255, 0.9);
@@ -761,7 +742,6 @@ header {
      Lightbox for Enlarged Images
 ------------------------------ */
 .lightbox {
-  display: none;
   position: fixed;
   z-index: 3000;
   left: 0;
@@ -769,9 +749,20 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  cursor: zoom-out; /* indicates user can click to close */
 }
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
 .lightbox-close {
   position: absolute;
   top: 2rem;
@@ -780,16 +771,10 @@ header {
   color: #fff;
   cursor: pointer;
   transition: color 0.3s;
+  z-index: 3100; /* above the image */
 }
 .lightbox-close:hover {
   color: #2a9fd6;
-}
-.lightbox img {
-  max-width: 90%;
-  max-height: 80%;
-  object-fit: contain;
-  border-radius: 6px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 /* -----------------------------
