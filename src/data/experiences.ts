@@ -14,7 +14,7 @@ export const experiences: Experience[] = [
       "Co-leading a team of nine (eight software developers and one business analyst) in collaboration with the team lead.",
       "Providing technical guidance to junior developers, coordinating project assignments, and overseeing code reviews, task report evaluations, and team meetings to ensure the timely delivery of high-quality software solutions.",
     ],
-    logo: "/assets/images/companyLogos/siren.png",
+    logo: "/assets/images/company-logos/siren.png",
   },
   {
     company: "Bumper Technology",
@@ -26,7 +26,7 @@ export const experiences: Experience[] = [
       "Developed applications for the company's website admin panel using Python, Django, SQLite, HTML, CSS, and JavaScript following the MVT pattern.",
       "Created an application to transfer data from a text field to the database, supporting CSV input/output and implementing data validation.",
     ],
-    logo: "/assets/images/companyLogos/bumper.png",
+    logo: "/assets/images/company-logos/bumper.png",
   },
   {
     company: "Innova IT Solutions",
@@ -38,7 +38,7 @@ export const experiences: Experience[] = [
       "Contributed to the development of LEGA, a Spring-based web application built on a microservices architecture following REST principles.",
       "Implemented front-end components using TypeScript and Angular, ensuring seamless integration with back-end services.",
     ],
-    logo: "/assets/images/companyLogos/innova.png",
+    logo: "/assets/images/company-logos/innova.png",
   },
   {
     company: "SimBT Simulation Science and Technologies Ltd.",
@@ -51,6 +51,6 @@ export const experiences: Experience[] = [
       "Integrated Unity for specific simulation components, enhancing realism and interactivity.",
       "Designed and implemented simulation panels, utilizing UDP for real-time communication and multithreading to improve system performance and responsiveness.",
     ],
-    logo: "/assets/images/companyLogos/simbt.png",
+    logo: "/assets/images/company-logos/simbt.png",
   },
 ];

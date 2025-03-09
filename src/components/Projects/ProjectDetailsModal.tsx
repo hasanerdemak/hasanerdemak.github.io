@@ -140,8 +140,18 @@ const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
           </div>
         )}
 
-        {/* Repo / Download linkleri */}
+        {/* Site / Repo / Download linkleri */}
         <div className="modal-links">
+          {project.siteLink && (
+            <a
+              href={project.siteLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
+            >
+              Go to the Website
+            </a>
+          )}
           {project.repoLink && (
             <a
               href={project.repoLink}

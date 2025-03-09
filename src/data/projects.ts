@@ -7,7 +7,7 @@ export const projects: Project[] = [
     summary: "",
     description:
       "Developed a software platform for Securitas, a global leader in security solutions, as part of Siren IT Solutions. The platform enables administrative employees to securely record and report work-related transactions while allowing field employees to fulfill and document operational tasks. It enhances workflow efficiency and department-wide communication. As a Full-Stack Developer, contributed to both the back-end (C#, .NET, Entity Framework) and front-end (React, TypeScript), focusing on security, usability, and scalability. Designed and implemented a secure, user-friendly internal web portal that aligns with Securitas’ high standards for operational excellence.",
-    image: "",
+    image: "/assets/images/project-images/smart/smart.png",
     siteLink: null,
     repoLink: null,
     downloadLink: null,
@@ -32,8 +32,8 @@ export const projects: Project[] = [
     summary: "",
     description:
       "Developed and enhanced the official website for Securitas Fire Services, which provides comprehensive fire protection for industrial facilities, shopping centers, tourism complexes, and other high-risk environments. Improved website security by refining the Content-Security-Policy (CSP), upgrading Bootstrap and jQuery versions, and implementing UI enhancements for a better user experience. Additionally, contributed to server-side security and version management on the FTP-hosted platform, ensuring smooth functionality and robust protection against vulnerabilities.",
-    image: "",
-    siteLink: null,
+    image: "/assets/images/project-images/secfire/secfire.png",
+    siteLink: "https://securitasitfaiye.com/index.htm",
     repoLink: null,
     downloadLink: null,
     technologies: ["HTML", "CSS", "FTP", "Bootstrap", "jQuery", "UI/UX"],
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     summary: "",
     description:
       "Developed front-end features for LEGA, a litigation and enforcement management platform designed by Innova to streamline legal and administrative processes for corporate lawyers and contracted law offices. The platform, available in two versions (LEGA & LEGA Lite), provides a centralized and modern approach to case management. As a Front-End Developer Intern, contributed to the Angular & TypeScript-based interface within a Spring-powered microservices architecture. Implemented new features, ensured seamless REST API integration with back-end services, and designed UI components to enhance user experience and functionality. Gained valuable enterprise software development experience and deepened expertise in modern web technologies.",
-    image: "",
+    image: "/assets/images/project-images/lega/lega.png",
     siteLink: null,
     repoLink: null,
     downloadLink: null,
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     summary: "",
     description:
       "Developed WPF-based simulation panels for MARSIM, Turkey’s first domestically developed virtual bridge simulator, designed by SimBT to enhance naval training and operational preparedness. The system provides highly accurate modeling of ship maneuvers, open-sea operations, and port entry/exit simulations. Implemented UDP-based real-time communication, enabling efficient data exchange between simulation components. Optimized system performance through multithreading techniques, ensuring smooth and responsive interactions. Additionally, contributed to visual components of the simulation using Unity, enhancing realism and user experience. This project strengthened expertise in high-performance data processing, network communication, and real-time simulation UI development.",
-    image: "",
+    image: "/assets/images/project-images/marsim/marsim.png",
     siteLink: null,
     repoLink: null,
     downloadLink: null,
@@ -83,7 +83,17 @@ export const projects: Project[] = [
       "UDP",
       "Multithreading",
     ],
-    detailImages: [],
+    detailImages: [
+      "/assets/images/project-images/marsim/marsim-product-family.png",
+      "/assets/images/project-images/marsim/full-mission-bridge-simulator.png",
+      "/assets/images/project-images/marsim/radar-training.png",
+      "/assets/images/project-images/marsim/tug-simulator.png",
+      "/assets/images/project-images/marsim/vr-bridge-simulator.png",
+      "/assets/images/project-images/marsim/navigation-simulator.png",
+      "/assets/images/project-images/marsim/naval-training.png",
+      "/assets/images/project-images/marsim/emergency-response-training.png",
+      "/assets/images/project-images/marsim/advanced-fire-fighting-training.png",
+    ],
     categories: ["simulation", "desktop", "game"],
   },
   {
@@ -92,7 +102,7 @@ export const projects: Project[] = [
     summary: "A virtual fairground for interactive product showcasing.",
     description:
       "MetaFuar is a virtual fairground platform designed for interactive product showcasing. Developed with C#, Unity, Photon, Firebase, Django, and MongoDB, it offers an immersive experience for users, integrating advanced features such as Oculus Interaction SDK.",
-    image: "/assets/images/projectImages/metaFuar/MetaFuar-project-photo.png",
+    image: "/assets/images/project-images/metafuar/metafuar-project-photo.png",
     siteLink: null,
     repoLink: "https://github.com/TOBB-ETU-Seniors/MetaFuar",
     downloadLink: null,
@@ -107,9 +117,13 @@ export const projects: Project[] = [
       "Google Cloud",
     ],
     detailImages: [
-      "/assets/images/MetaFuar-detail1.png",
-      "/assets/images/MetaFuar-detail2.png",
-      "/assets/images/MetaFuar-detail3.png",
+      "/assets/images/project-images/metaFuar/fair.png",
+      "/assets/images/project-images/metaFuar/iphone-exhibition.png",
+      "/assets/images/project-images/metaFuar/parking-lot-entrance-1.png",
+      "/assets/images/project-images/metaFuar/parking-lot-entrance-2.png",
+      "/assets/images/project-images/metaFuar/bowling.png",
+      "/assets/images/project-images/metaFuar/bowling-2.png",
+      "/assets/images/project-images/metaFuar/race-track.png",
     ],
     categories: ["game", "web"],
   },
@@ -119,19 +133,19 @@ export const projects: Project[] = [
     summary: "An exciting first-person perspective 3D parkour game.",
     description:
       "FreeRun is an exciting first-person perspective 3D parkour game developed using C# and Unity. It challenges players with dynamic obstacles and an immersive environment, pushing the boundaries of gameplay and design.",
-    image: "/assets/images/projectImages/freeRun/FreeRun-project-photo.png",
+    image: "/assets/images/project-images/freerun/freerun-project-photo.png",
     siteLink: null,
     repoLink: "https://github.com/hasanerdemak/FreeRunGame",
     downloadLink:
       "https://drive.google.com/file/d/1w6Fumg_bztKazIWO-Vp5HttaIYb8-Fnt/view",
     technologies: ["C#", "Unity"],
     detailImages: [
-      "/assets/images/projectImages/freeRun/1.png",
-      "/assets/images/projectImages/freeRun/2.png",
-      "/assets/images/projectImages/freeRun/2.png",
-      "/assets/images/projectImages/freeRun/2.png",
-      "/assets/images/projectImages/freeRun/2.png",
-      "/assets/images/projectImages/freeRun/3.png",
+      "/assets/images/project-images/freerun/main-menu.png",
+      "/assets/images/project-images/freerun/start-menu.png",
+      "/assets/images/project-images/freerun/ingame-ss.png",
+      "/assets/images/project-images/freerun/easy-map.png",
+      "/assets/images/project-images/freerun/medium-map.png",
+      "/assets/images/project-images/freerun/hard-map.png",
     ],
     categories: ["game", "desktop"],
   },
@@ -142,7 +156,7 @@ export const projects: Project[] = [
     description:
       "Developed a music genre classification model based on Turkish song lyrics as part of a Natural Language Processing (NLP) course project. The study resulted in a research paper formatted in IEEE style, detailing the methodology and findings. Built a custom corpus of Turkish song lyrics and trained machine learning models, including a Bi-LSTM network, to classify genres based on textual data. This project strengthened expertise in NLP, model training, and deep learning, while also providing valuable experience in academic research and IEEE-style reporting.",
     image:
-      "/assets/images/projectImages/musicGenreClassification/musicGenreClassification_2.png",
+      "/assets/images/project-images/music-genre-classification/music-genre-classification-2.png",
     siteLink: null,
     repoLink: "https://github.com/hasanerdemak/NLP-Music-Genre-Classification",
     downloadLink: null,
@@ -159,12 +173,15 @@ export const projects: Project[] = [
     description:
       "Developed a logistics optimization model to determine the optimal number and locations of logistics centers for a transportation company in Turkey. Leveraged AI-driven approaches and linear programming to minimize costs and maximize operational efficiency. Generated a data-driven map and database, providing transportation companies with a valuable resource for identifying the most suitable warehouse locations. Additionally, documented the project in a detailed academic report, covering methodology, data analysis, and key findings.",
     image:
-      "/assets/images/projectImages/aiLogisticCentersTurkey/aiLogisticCentersTurkey.png",
+      "/assets/images/project-images/ai-logistic-centers-turkey/ai-logistic-centers-turkey.png",
     siteLink: null,
     repoLink: "https://github.com/hasanerdemak/AI-Logistics-Centers-Turkey-LP",
     downloadLink: null,
     technologies: [],
-    detailImages: [],
+    detailImages: [
+      "/assets/images/project-images/ai-logistic-centers-turkey/annual-demand-by-region.png",
+      "/assets/images/project-images/ai-logistic-centers-turkey/customer-and-potential-warehouse-locations.png",
+    ],
     categories: [],
   },
   // LeetCode solutions
