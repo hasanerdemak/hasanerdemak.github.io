@@ -27,7 +27,7 @@ export const projects: Project[] = [
     categories: ["web"],
   },
   {
-    id: "secfire",
+    id: "secFire",
     title: "Securitas Fire Services Website",
     summary: "",
     description:
@@ -87,29 +87,7 @@ export const projects: Project[] = [
     categories: ["simulation", "desktop", "game"],
   },
   {
-    id: "freerun",
-    title: "FreeRun",
-    summary: "An exciting first-person perspective 3D parkour game.",
-    description:
-      "FreeRun is an exciting first-person perspective 3D parkour game developed using C# and Unity. It challenges players with dynamic obstacles and an immersive environment, pushing the boundaries of gameplay and design.",
-    image: "/assets/images/projectImages/freeRun/FreeRun-project-photo.png",
-    siteLink: null,
-    repoLink: "https://github.com/hasanerdemak/FreeRunGame",
-    downloadLink:
-      "https://drive.google.com/file/d/1w6Fumg_bztKazIWO-Vp5HttaIYb8-Fnt/view",
-    technologies: ["C#", "Unity"],
-    detailImages: [
-      "/assets/images/projectImages/freeRun/1.png",
-      "/assets/images/projectImages/freeRun/2.png",
-      "/assets/images/projectImages/freeRun/2.png",
-      "/assets/images/projectImages/freeRun/2.png",
-      "/assets/images/projectImages/freeRun/2.png",
-      "/assets/images/projectImages/freeRun/3.png",
-    ],
-    categories: ["game", "desktop"],
-  },
-  {
-    id: "metafuar",
+    id: "metaFuar",
     title: "MetaFuar",
     summary: "A virtual fairground for interactive product showcasing.",
     description:
@@ -135,4 +113,63 @@ export const projects: Project[] = [
     ],
     categories: ["game", "web"],
   },
+  {
+    id: "freeRun",
+    title: "FreeRun",
+    summary: "An exciting first-person perspective 3D parkour game.",
+    description:
+      "FreeRun is an exciting first-person perspective 3D parkour game developed using C# and Unity. It challenges players with dynamic obstacles and an immersive environment, pushing the boundaries of gameplay and design.",
+    image: "/assets/images/projectImages/freeRun/FreeRun-project-photo.png",
+    siteLink: null,
+    repoLink: "https://github.com/hasanerdemak/FreeRunGame",
+    downloadLink:
+      "https://drive.google.com/file/d/1w6Fumg_bztKazIWO-Vp5HttaIYb8-Fnt/view",
+    technologies: ["C#", "Unity"],
+    detailImages: [
+      "/assets/images/projectImages/freeRun/1.png",
+      "/assets/images/projectImages/freeRun/2.png",
+      "/assets/images/projectImages/freeRun/2.png",
+      "/assets/images/projectImages/freeRun/2.png",
+      "/assets/images/projectImages/freeRun/2.png",
+      "/assets/images/projectImages/freeRun/3.png",
+    ],
+    categories: ["game", "desktop"],
+  },
+  {
+    id: "musicGenreClassification",
+    title: "Music Genre Classification with Turkish Lyrics",
+    summary: "",
+    description:
+      "Developed a music genre classification model based on Turkish song lyrics as part of a Natural Language Processing (NLP) course project. The study resulted in a research paper formatted in IEEE style, detailing the methodology and findings. Built a custom corpus of Turkish song lyrics and trained machine learning models, including a Bi-LSTM network, to classify genres based on textual data. This project strengthened expertise in NLP, model training, and deep learning, while also providing valuable experience in academic research and IEEE-style reporting.",
+    image:
+      "/assets/images/projectImages/musicGenreClassification/musicGenreClassification_2.png",
+    siteLink: null,
+    repoLink: "https://github.com/hasanerdemak/NLP-Music-Genre-Classification",
+    downloadLink: null,
+    technologies: [],
+    detailImages: [],
+    categories: [],
+  },
+  {
+    id: "aiLogisticCentersTurkey",
+    title:
+      "Creating Logistics Centers for Transport Companies across Turkey with Artificial Intelligence and Linear Programming",
+    summary:
+      "Creating Logistics Centers for Transport Companies across Turkey with Artificial Intelligence and Linear Programming", // düzenlenecek
+    description:
+      "Developed a logistics optimization model to determine the optimal number and locations of logistics centers for a transportation company in Turkey. Leveraged AI-driven approaches and linear programming to minimize costs and maximize operational efficiency. Generated a data-driven map and database, providing transportation companies with a valuable resource for identifying the most suitable warehouse locations. Additionally, documented the project in a detailed academic report, covering methodology, data analysis, and key findings.",
+    image:
+      "/assets/images/projectImages/aiLogisticCentersTurkey/aiLogisticCentersTurkey.png",
+    siteLink: null,
+    repoLink: "https://github.com/hasanerdemak/AI-Logistics-Centers-Turkey-LP",
+    downloadLink: null,
+    technologies: [],
+    detailImages: [],
+    categories: [],
+  },
+  // LeetCode solutions
+  // toolify-ui
+  // AgeOfEmpires
+  // CarRaceGame
+  // MetroHattiVeritabaniYonetimSistemi
 ];

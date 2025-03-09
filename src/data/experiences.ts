@@ -5,7 +5,7 @@ export const experiences: Experience[] = [
   {
     company: "Siren IT Solutions",
     position: "Full-stack Developer & Assistant Team Leader",
-    projects: projects.filter((p) => ["smart", "secfire"].includes(p.id)),
+    projects: projects.filter((p) => ["smart", "secFire"].includes(p.id)),
     startDate: "2023-10",
     endDate: "",
     responsibilities: [
@@ -19,7 +19,7 @@ export const experiences: Experience[] = [
   {
     company: "Bumper Technology",
     position: "Back-end Developer Intern",
-    projects: projects.filter((p) => ["freerun"].includes(p.id)),
+    projects: [],
     startDate: "2022-09",
     endDate: "2022-12",
     responsibilities: [
