@@ -9,7 +9,16 @@ export interface Project {
   downloadLink: string | null;
   technologies: string[];
   detailImages: string[];
-  categories: string[];
+  categories: ProjectCategory[];
+}
+
+export enum ProjectCategory {
+  ALL = "all",
+  WEB = "web",
+  DESKTOP = "desktop",
+  GAME = "game",
+  SIMULATION = "simulation",
+  AI = "ai",
 }
 
 export interface Experience {

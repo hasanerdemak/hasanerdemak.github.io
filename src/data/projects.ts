@@ -1,10 +1,11 @@
-import { Project } from "../types/types";
+import { Project, ProjectCategory } from "../types/types";
 
 export const projects: Project[] = [
   {
     id: "smart",
     title: "SMArt (Security Management Art)",
-    summary: "",
+    summary:
+      "Internal web portal for managing security operations and communication at Securitas.",
     description:
       "Developed a software platform for Securitas, a global leader in security solutions, as part of Siren IT Solutions. The platform enables administrative employees to securely record and report work-related transactions while allowing field employees to fulfill and document operational tasks. It enhances workflow efficiency and department-wide communication. As a Full-Stack Developer, contributed to both the back-end (C#, .NET, Entity Framework) and front-end (React, TypeScript), focusing on security, usability, and scalability. Designed and implemented a secure, user-friendly internal web portal that aligns with Securitas’ high standards for operational excellence.",
     image: "/assets/images/project-images/smart/smart.png",
@@ -24,28 +25,30 @@ export const projects: Project[] = [
       "CSS",
     ],
     detailImages: [],
-    categories: ["web"],
+    categories: [ProjectCategory.WEB],
   },
   {
     id: "secFire",
     title: "Securitas Fire Services Website",
-    summary: "",
+    summary:
+      "Official corporate website of Securitas Fire Services, showcasing fire protection services and solutions.",
     description:
-      "Developed and enhanced the official website for Securitas Fire Services, which provides comprehensive fire protection for industrial facilities, shopping centers, tourism complexes, and other high-risk environments. Improved website security by refining the Content-Security-Policy (CSP), upgrading Bootstrap and jQuery versions, and implementing UI enhancements for a better user experience. Additionally, contributed to server-side security and version management on the FTP-hosted platform, ensuring smooth functionality and robust protection against vulnerabilities.",
+      "The Securitas Fire Services Website serves as the official online presence for Securitas' fire safety and protection services, catering primarily to industrial facilities, shopping centers, tourism complexes, and other high-risk environments. My role included enhancing existing website security by refining the Content-Security-Policy (CSP), upgrading Bootstrap and jQuery libraries, implementing UI improvements, and managing server-side maintenance on the FTP-hosted platform to ensure ongoing performance and security.",
     image: "/assets/images/project-images/secfire/secfire.png",
     siteLink: "https://securitasitfaiye.com/index.htm",
     repoLink: null,
     downloadLink: null,
     technologies: ["HTML", "CSS", "FTP", "Bootstrap", "jQuery", "UI/UX"],
     detailImages: [],
-    categories: ["web"],
+    categories: [ProjectCategory.WEB],
   },
   {
     id: "lega",
     title: "LEGA",
-    summary: "",
+    summary:
+      "A centralized legal management platform designed for corporate lawyers and law offices.",
     description:
-      "Developed front-end features for LEGA, a litigation and enforcement management platform designed by Innova to streamline legal and administrative processes for corporate lawyers and contracted law offices. The platform, available in two versions (LEGA & LEGA Lite), provides a centralized and modern approach to case management. As a Front-End Developer Intern, contributed to the Angular & TypeScript-based interface within a Spring-powered microservices architecture. Implemented new features, ensured seamless REST API integration with back-end services, and designed UI components to enhance user experience and functionality. Gained valuable enterprise software development experience and deepened expertise in modern web technologies.",
+      "LEGA is a modern litigation and enforcement management platform developed by Innova, providing corporate legal departments and contracted law offices with a centralized and efficient way to manage cases and workflows. Available in two versions (LEGA and LEGA Lite), it integrates advanced front-end technologies with Angular and TypeScript, supported by a robust microservices back-end powered by Spring. As a Front-End Developer Intern, contributed by implementing key features, ensuring seamless integration with RESTful APIs, and enhancing user experience through responsive UI components.",
     image: "/assets/images/project-images/lega/lega.png",
     siteLink: null,
     repoLink: null,
@@ -62,14 +65,15 @@ export const projects: Project[] = [
       "REST API",
     ],
     detailImages: [],
-    categories: ["web"],
+    categories: [ProjectCategory.WEB],
   },
   {
     id: "marsim",
     title: "MARSIM (Maritime Simulator Family)",
-    summary: "",
+    summary:
+      "Turkey’s first domestically developed virtual bridge simulator for advanced maritime training.",
     description:
-      "Developed WPF-based simulation panels for MARSIM, Turkey’s first domestically developed virtual bridge simulator, designed by SimBT to enhance naval training and operational preparedness. The system provides highly accurate modeling of ship maneuvers, open-sea operations, and port entry/exit simulations. Implemented UDP-based real-time communication, enabling efficient data exchange between simulation components. Optimized system performance through multithreading techniques, ensuring smooth and responsive interactions. Additionally, contributed to visual components of the simulation using Unity, enhancing realism and user experience. This project strengthened expertise in high-performance data processing, network communication, and real-time simulation UI development.",
+      "MARSIM, developed by SimBT, is Turkey's first domestically created virtual bridge simulator designed to enhance naval training and operational readiness. It offers highly realistic simulations of ship maneuvers, open-sea navigation, and port entry/exit operations. My contributions included developing WPF-based simulation panels, implementing UDP-based real-time data communication between simulation components, optimizing performance through multithreading, and enhancing visual realism with Unity integration. The simulator significantly advances maritime training through immersive and responsive simulation technology.",
     image: "/assets/images/project-images/marsim/marsim.png",
     siteLink: null,
     repoLink: null,
@@ -94,14 +98,16 @@ export const projects: Project[] = [
       "/assets/images/project-images/marsim/emergency-response-training.png",
       "/assets/images/project-images/marsim/advanced-fire-fighting-training.png",
     ],
-    categories: ["simulation", "desktop", "game"],
+    categories: [ProjectCategory.SIMULATION, ProjectCategory.DESKTOP],
   },
+
   {
     id: "metaFuar",
     title: "MetaFuar",
-    summary: "A virtual fairground for interactive product showcasing.",
+    summary:
+      "Interactive virtual fairground for showcasing products in a VR environment.",
     description:
-      "MetaFuar is a virtual fairground platform designed for interactive product showcasing. Developed with C#, Unity, Photon, Firebase, Django, and MongoDB, it offers an immersive experience for users, integrating advanced features such as Oculus Interaction SDK.",
+      "MetaFuar is a virtual fairground platform enabling immersive product exhibitions. Developed using C#, Unity, Photon, Firebase, Django, MongoDB, and Oculus SDK, it provides interactive, real-time experiences for users in virtual reality.",
     image: "/assets/images/project-images/metafuar/metafuar-project-photo.png",
     siteLink: null,
     repoLink: "https://github.com/TOBB-ETU-Seniors/MetaFuar",
@@ -125,14 +131,15 @@ export const projects: Project[] = [
       "/assets/images/project-images/metaFuar/bowling-2.png",
       "/assets/images/project-images/metaFuar/race-track.png",
     ],
-    categories: ["game", "web"],
+    categories: [ProjectCategory.GAME, ProjectCategory.SIMULATION],
   },
   {
     id: "freeRun",
     title: "FreeRun",
-    summary: "An exciting first-person perspective 3D parkour game.",
+    summary:
+      "First-person 3D parkour game challenging players with dynamic environments.",
     description:
-      "FreeRun is an exciting first-person perspective 3D parkour game developed using C# and Unity. It challenges players with dynamic obstacles and an immersive environment, pushing the boundaries of gameplay and design.",
+      "FreeRun is a thrilling first-person perspective 3D parkour game built using C# and Unity. Players navigate challenging obstacles in immersive environments, pushing gameplay boundaries with dynamic interaction and engaging level design.",
     image: "/assets/images/project-images/freerun/freerun-project-photo.png",
     siteLink: null,
     repoLink: "https://github.com/hasanerdemak/FreeRunGame",
@@ -147,14 +154,14 @@ export const projects: Project[] = [
       "/assets/images/project-images/freerun/medium-map.png",
       "/assets/images/project-images/freerun/hard-map.png",
     ],
-    categories: ["game", "desktop"],
+    categories: [ProjectCategory.GAME, ProjectCategory.DESKTOP],
   },
   {
     id: "musicGenreClassification",
     title: "Music Genre Classification with Turkish Lyrics",
-    summary: "",
+    summary: "AI-powered music genre classification using Turkish song lyrics.",
     description:
-      "Developed a music genre classification model based on Turkish song lyrics as part of a Natural Language Processing (NLP) course project. The study resulted in a research paper formatted in IEEE style, detailing the methodology and findings. Built a custom corpus of Turkish song lyrics and trained machine learning models, including a Bi-LSTM network, to classify genres based on textual data. This project strengthened expertise in NLP, model training, and deep learning, while also providing valuable experience in academic research and IEEE-style reporting.",
+      "Built a genre classification model for Turkish music using NLP and deep learning techniques. Created a corpus, trained Bi-LSTM networks, and documented findings in an IEEE-formatted research paper.",
     image:
       "/assets/images/project-images/music-genre-classification/music-genre-classification-2.png",
     siteLink: null,
@@ -162,16 +169,15 @@ export const projects: Project[] = [
     downloadLink: null,
     technologies: [],
     detailImages: [],
-    categories: [],
+    categories: [ProjectCategory.AI],
   },
   {
     id: "aiLogisticCentersTurkey",
-    title:
-      "Creating Logistics Centers for Transport Companies across Turkey with Artificial Intelligence and Linear Programming",
+    title: "AI-driven Logistics Center Optimization",
     summary:
-      "Creating Logistics Centers for Transport Companies across Turkey with Artificial Intelligence and Linear Programming", // düzenlenecek
+      "Optimization model for logistics center placement across Turkey using AI and Linear Programming.",
     description:
-      "Developed a logistics optimization model to determine the optimal number and locations of logistics centers for a transportation company in Turkey. Leveraged AI-driven approaches and linear programming to minimize costs and maximize operational efficiency. Generated a data-driven map and database, providing transportation companies with a valuable resource for identifying the most suitable warehouse locations. Additionally, documented the project in a detailed academic report, covering methodology, data analysis, and key findings.",
+      "Developed an AI-driven model leveraging linear programming to optimize logistics center locations in Turkey, minimizing costs and enhancing efficiency. Delivered detailed data analysis and visualizations.",
     image:
       "/assets/images/project-images/ai-logistic-centers-turkey/ai-logistic-centers-turkey.png",
     siteLink: null,
@@ -182,11 +188,12 @@ export const projects: Project[] = [
       "/assets/images/project-images/ai-logistic-centers-turkey/annual-demand-by-region.png",
       "/assets/images/project-images/ai-logistic-centers-turkey/customer-and-potential-warehouse-locations.png",
     ],
-    categories: [],
+    categories: [ProjectCategory.AI],
   },
-  // LeetCode solutions
-  // toolify-ui
-  // AgeOfEmpires
-  // CarRaceGame
-  // MetroHattiVeritabaniYonetimSistemi
 ];
+
+// LeetCode solutions
+// toolify-ui
+// AgeOfEmpires
+// CarRaceGame
+// MetroHattiVeritabaniYonetimSistemi

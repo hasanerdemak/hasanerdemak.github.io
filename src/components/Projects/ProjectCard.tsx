@@ -9,7 +9,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [openDetailsModal, setOpenDetailsModal] = useState<boolean>(false);
   const [isSummaryExpanded, setIsSummaryExpanded] = useState<boolean>(false);
-  const charachterLimit = 100;
+  const charachterLimit = 120;
 
   const toggleSummary = () => {
     setIsSummaryExpanded(!isSummaryExpanded);

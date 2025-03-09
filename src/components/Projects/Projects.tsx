@@ -1,25 +1,23 @@
 import React, { useState } from "react";
 import { projects } from "../../data/projects";
+import { ProjectCategory } from "../../types/types";
 import ProjectCard from "./ProjectCard";
 
 const Projects: React.FC = () => {
-  const [filter, setFilter] = useState<string>("all");
+  const [filter, setFilter] = useState<ProjectCategory>(ProjectCategory.ALL);
 
   const filteredProjects = projects.filter((project) => {
-    if (filter === "all") return true;
-    return project.categories
-      .map((cat) => cat.toLowerCase())
-      .includes(filter.toLowerCase());
+    if (filter === ProjectCategory.ALL) return true;
+    return project.categories.includes(filter);
   });
 
   const filterButtons = [
-    { label: "All", value: "all" },
-    { label: "Mobile", value: "mobile" },
-    { label: "Desktop", value: "desktop" },
-    { label: "Web", value: "web" },
-    { label: "Game", value: "game" },
-    { label: "AI", value: "ai" },
-    { label: "Machine Learning", value: "machine-learning" },
+    { label: "All", value: ProjectCategory.ALL },
+    { label: "Web", value: ProjectCategory.WEB },
+    { label: "Desktop", value: ProjectCategory.DESKTOP },
+    { label: "Game", value: ProjectCategory.GAME },
+    { label: "Simulation", value: ProjectCategory.SIMULATION },
+    { label: "AI", value: ProjectCategory.AI },
   ];
 
   return (
