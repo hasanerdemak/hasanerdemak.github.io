@@ -43,7 +43,7 @@ export const experiences: Experience[] = [
   {
     company: "SimBT Simulation Science and Technologies Ltd.",
     position: "Full-stack Developer Intern",
-    projects: projects.filter((p) => ["kegm-ds"].includes(p.id)),
+    projects: projects.filter((p) => ["marsim"].includes(p.id)),
     startDate: "2021-05",
     endDate: "2021-09",
     responsibilities: [

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import WaterDropGrid from "../assets/components/WaterDropGrid/WaterDropGrid";
 
 const Home: React.FC = () => {
   const fullText =
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
 
   return (
     <section id="home" className="section home-section">
+      <WaterDropGrid />
       <div className="container home-content">
         <div className="profile-picture">
           <img src={"/assets/images/hasan-erdem-ak.jpg"} alt="Hasan Erdem Ak" />
