@@ -190,14 +190,7 @@ const WaterDropGrid: React.FC = () => {
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
-      style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        background: "#111", // Koyu gri zemin (isterseniz #000 veya başka bir renk)
-      }}
+      className='water-drop-grid'
     />
   );
 };

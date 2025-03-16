@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   return (
     <header>
       <div className="container header-container">
-        <h1 className="logo" style={{ marginBottom: 0 }}>
+        <h1 className="logo">
           <a href="#home">Hasan Erdem Ak</a>
         </h1>
         <nav>
