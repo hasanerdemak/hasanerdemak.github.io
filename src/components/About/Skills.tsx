@@ -29,7 +29,7 @@ const Skills: React.FC = () => {
 
     // Boşlukları veya "-" karakterlerini kullanarak kelimelere ayır ve her kelimenin ilk harfini al
     const shortName = skillName
-      .split(/[\s\-]+/) // Boşluk ve tireyi ayırıcı olarak kullanıyoruz
+      .split(/[\s-]+/) // Boşluk ve tireyi ayırıcı olarak kullanıyoruz
       .map((word) => word.charAt(0).toUpperCase()) // Her kelimenin ilk harfini al ve büyük yap
       .join(""); // Harfleri birleştir
 
