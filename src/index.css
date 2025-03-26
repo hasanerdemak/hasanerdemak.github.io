@@ -117,7 +117,8 @@ header {
      Home Section
 ------------------------------ */
 .home-section {
-  --background: url("/public/assets/images/home_background.png") center/cover no-repeat;
+  --background: url("/public/assets/images/home_background.png") center/cover
+    no-repeat;
   color: #fff;
   text-align: center;
   padding-top: 150px;
@@ -163,7 +164,7 @@ header {
   }
 }
 
-.water-drop-grid{
+.water-drop-grid {
   position: absolute;
   top: 75px;
   left: 0;
@@ -539,18 +540,21 @@ header {
 }
 
 .skills-container {
-  margin-top: 1.5rem;
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column; /* Skill card'ları dikey sıralıyoruz */
+  gap: 3rem;
+  align-items: center; /* Ortalamak için */
+  padding: 1rem;
 }
 
 .skill-card {
   background-color: #fff;
-  border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
 .skill-card:hover {
@@ -563,48 +567,64 @@ header {
   color: #2a9fd6;
 }
 
-/* Her bir kategori için başlık ve layout */
-.skill-category {
-  margin-bottom: 2rem;
-}
-
-.skill-category h4 {
-  font-size: 1.3rem;
-  margin-bottom: 0.75rem;
-  color: #2a9fd6; /* Örnek bir kategori başlık rengi */
-}
-
-/* Skill item'ların yerleşimi */
+/* Skill items düzenlemeleri (her card içindeki skill'ler) */
 .skill-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  display: grid; /* Grid düzeni */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Dinamik kolon sayısı */
+  gap: 2rem;
+  justify-items: center; /* Skill'leri ortalar */
 }
 
 .skill {
-  transition: transform 0.2s;
-  border-radius: 4px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Yatay ve dikeyde ortalama için */
+  justify-content: center; /* Dikey ortalama */
+  align-items: center; /* Yatay ortalama */
 }
 
 .skill img {
-  height: 30px;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  height: 70px; /* Skill ikonları boyutu */
+  width: 70px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.skill h5 {
+  font-size: 1rem;
+  margin-top: 10px; /* İkon ile başlık arasına boşluk ekler */
+  color: #333;
+  font-weight: 600;
+}
+
+.skill .icon-text {
+  height: 70px;
+  width: 70px;
+  line-height: 70px; /* Yükseklik ile tam ortalama */
+  background-color: #f1f1f1;
+  color: #2a9fd6;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap; /* Yazının taşmasını engellemek için */
+  overflow: hidden; /* Taşan yazıları gizler */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ortalamak için */
 }
 
 .skill:hover {
-  transform: translateY(-3px);
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  transform: translateY(-5px);
 }
 
 /* -----------------------------
@@ -863,6 +883,18 @@ footer p {
     order: 1;
     margin-bottom: 1rem;
   }
+  .skills-container {
+    gap: 2rem; /* Mobilde daha geniş boşluklar */
+  }
+
+  .skill img {
+    height: 60px; /* Mobilde ikon boyutunu küçült */
+    width: 60px;
+  }
+
+  .skill h5 {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -874,6 +906,18 @@ footer p {
   }
   .profile-picture img {
     width: 200px;
+  }
+  .skills-container {
+    gap: 1rem; /* Küçük ekranlarda boşlukları daraltıyoruz */
+  }
+
+  .skill img {
+    height: 50px; /* Çok küçük ekranlar için daha küçük ikon */
+    width: 50px;
+  }
+
+  .skill h5 {
+    font-size: 0.85rem;
   }
 
   /* Timeline görünümü mobilde tek sütun olacak şekilde düzenleniyor */
@@ -915,5 +959,4 @@ footer p {
     width: 80px; /* istediğin değeri verebilirsin */
     margin-bottom: 0.3rem;
   }
-
 }

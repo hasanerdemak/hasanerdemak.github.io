@@ -7,32 +7,32 @@ export const skills: SkillCategoryGroup[] = [
       {
         name: "C#",
         badge:
-          "https://img.shields.io/badge/c%23-%23239120.svg?style=plastic&logo=c-sharp&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/csharp/csharp-original.svg",
       },
       {
         name: "Java",
         badge:
-          "https://img.shields.io/badge/java-%23ED8B00.svg?style=plastic&logo=openjdk&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/java/java-original.svg",
       },
       {
         name: "C",
         badge:
-          "https://img.shields.io/badge/c-%2300599C.svg?style=plastic&logo=c&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/c/c-original.svg",
       },
       {
         name: "Python",
         badge:
-          "https://img.shields.io/badge/python-3670A0?style=plastic&logo=python&logoColor=ffdd54",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg",
       },
       {
         name: "TypeScript",
         badge:
-          "https://img.shields.io/badge/typescript-%23007ACC.svg?style=plastic&logo=typescript&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/typescript/typescript-original.svg",
       },
       {
         name: "JavaScript",
         badge:
-          "https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg",
       },
     ],
   },
@@ -42,12 +42,12 @@ export const skills: SkillCategoryGroup[] = [
       {
         name: "HTML5",
         badge:
-          "https://img.shields.io/badge/HTML5-E34F26?style=plastic&logo=html5&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg",
       },
       {
         name: "CSS",
         badge:
-          "https://img.shields.io/badge/CSS-239120?style=plastic&logo=css3&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg",
       },
     ],
   },
@@ -57,92 +57,91 @@ export const skills: SkillCategoryGroup[] = [
       {
         name: ".NET",
         badge:
-          "https://img.shields.io/badge/.NET-512BD4?style=plastic&logo=.net&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/dot-net/dot-net-original.svg",
       },
       {
         name: "ASP.NET",
-        badge:
-          "https://img.shields.io/badge/ASP.NET-%23525252.svg?style=plastic&logo=.net&logoColor=white",
+        badge: "https://www.nuget.org/profiles/aspnet/avatar?imageSize=512",
       },
       {
         name: "WPF",
         badge:
-          "https://img.shields.io/badge/WPF-%230078D6.svg?style=plastic&logo=.net&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/wpf/wpf-original.svg",
       },
       {
         name: "React",
         badge:
-          "https://img.shields.io/badge/React-%2320232a.svg?style=plastic&logo=react&logoColor=61DAFB",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/react/react-original.svg",
       },
       {
         name: "Angular",
         badge:
-          "https://img.shields.io/badge/Angular-%23DD0031.svg?style=plastic&logo=angular&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angular/angular-original.svg",
       },
       {
         name: "Spring",
         badge:
-          "https://img.shields.io/badge/spring-%236DB33F.svg?style=plastic&logo=spring&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/spring/spring-original.svg",
       },
       {
         name: "Hibernate",
         badge:
-          "https://img.shields.io/badge/Hibernate-59666C?style=plastic&logo=Hibernate&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/hibernate/hibernate-original.svg",
       },
       {
         name: "Django",
         badge:
-          "https://img.shields.io/badge/django-%23092E20.svg?style=plastic&logo=django&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/django/django-plain.svg",
       },
       {
         name: "Node.js",
         badge:
-          "https://img.shields.io/badge/node.js-%2343853D.svg?style=plastic&logo=node.js&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg",
       },
       {
         name: "Unity",
         badge:
-          "https://img.shields.io/badge/Unity-%2320232a.svg?style=plastic&logo=unity&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/unity/unity-original.svg",
       },
       {
         name: "Bootstrap",
         badge:
-          "https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=plastic&logo=bootstrap&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg",
       },
       {
         name: "Keras",
         badge:
-          "https://img.shields.io/badge/Keras-%23D00000.svg?style=plastic&logo=Keras&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/keras/keras-original.svg",
       },
       {
         name: "NumPy",
         badge:
-          "https://img.shields.io/badge/numpy-%23013243.svg?style=plastic&logo=numpy&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/numpy/numpy-original.svg",
       },
       {
         name: "Pandas",
         badge:
-          "https://img.shields.io/badge/pandas-%23150458.svg?style=plastic&logo=pandas&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/pandas/pandas-original.svg",
       },
       {
         name: "Plotly",
         badge:
-          "https://img.shields.io/badge/Plotly-%233F4F75.svg?style=plastic&logo=plotly&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/plotly/plotly-original.svg",
       },
       {
         name: "PyTorch",
         badge:
-          "https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=plastic&logo=PyTorch&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/pytorch/pytorch-original.svg",
       },
       {
         name: "scikit-learn",
         badge:
-          "https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=plastic&logo=scikit-learn&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/scikitlearn/scikitlearn-original.svg",
       },
       {
         name: "TensorFlow",
         badge:
-          "https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=plastic&logo=TensorFlow&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/tensorflow/tensorflow-original.svg",
       },
     ],
   },
@@ -152,117 +151,117 @@ export const skills: SkillCategoryGroup[] = [
       {
         name: "Git",
         badge:
-          "https://img.shields.io/badge/Git-F05032?style=plastic&logo=git&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg",
       },
       {
         name: "GitHub",
         badge:
-          "https://img.shields.io/badge/GitHub-%23121011.svg?style=plastic&logo=github&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/github/github-original.svg",
       },
       {
         name: "Bitbucket",
         badge:
-          "https://img.shields.io/badge/Bitbucket-%230052CC.svg?style=plastic&logo=bitbucket&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bitbucket/bitbucket-original.svg",
       },
       {
         name: "SourceTree",
         badge:
-          "https://img.shields.io/badge/SourceTree-%230052CC.svg?style=plastic&logo=sourcetree&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/sourcetree/sourcetree-original.svg",
       },
       {
         name: "Postman",
         badge:
-          "https://img.shields.io/badge/Postman-FF6C37?style=plastic&logo=postman&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postman/postman-original.svg",
       },
       {
         name: "Visual Studio",
         badge:
-          "https://img.shields.io/badge/Visual%20Studio-5C2D91?style=plastic&logo=visual%20studio&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/visualstudio/visualstudio-original.svg",
       },
       {
         name: "VS Code",
         badge:
-          "https://img.shields.io/badge/VS%20Code-007ACC?style=plastic&logo=visual%20studio%20code&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/vscode/vscode-original.svg",
       },
       {
         name: "IntelliJ IDEA",
         badge:
-          "https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=plastic&logo=intellij%20idea&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/intellij/intellij-original.svg",
       },
       {
         name: "Azure DevOps",
         badge:
-          "https://img.shields.io/badge/Azure%20DevOps-0078D7?style=plastic&logo=azure-devops&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/azure/azure-original.svg",
       },
       {
         name: "Google Cloud",
         badge:
-          "https://img.shields.io/badge/Google%20Cloud-4285F4?style=plastic&logo=google-cloud&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/googlecloud/googlecloud-original.svg",
       },
       {
         name: "Heroku",
         badge:
-          "https://img.shields.io/badge/Heroku-430098?style=plastic&logo=heroku&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/heroku/heroku-original.svg",
       },
       {
         name: "Anaconda",
         badge:
-          "https://img.shields.io/badge/Anaconda-44A833?style=plastic&logo=anaconda&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/anaconda/anaconda-original.svg",
       },
       {
         name: "Apache Maven",
         badge:
-          "https://img.shields.io/badge/Apache%20Maven-C71A36?style=plastic&logo=apache%20maven&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/maven/maven-original.svg",
       },
       {
         name: "CMake",
         badge:
-          "https://img.shields.io/badge/CMake-064F8C?style=plastic&logo=cmake&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/cmake/cmake-original.svg",
       },
       {
         name: "Jira",
         badge:
-          "https://img.shields.io/badge/Jira-0052CC?style=plastic&logo=jira&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/jira/jira-original.svg",
       },
       {
         name: "Gradle",
         badge:
-          "https://img.shields.io/badge/Gradle-02303A?style=plastic&logo=gradle&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/gradle/gradle-original.svg",
       },
       {
         name: "GitHub Actions",
         badge:
-          "https://img.shields.io/badge/GitHub%20Actions-2088FF?style=plastic&logo=github%20actions&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/githubactions/githubactions-original.svg",
       },
       {
         name: "CLion",
         badge:
-          "https://img.shields.io/badge/CLion-black?style=plastic&logo=clion&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/clion/clion-original.svg",
       },
       {
         name: "PyCharm",
         badge:
-          "https://img.shields.io/badge/pycharm-143?style=plastic&logo=pycharm&logoColor=black&color=black&labelColor=green",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/pycharm/pycharm-original.svg",
       },
       {
         name: "Eclipse",
         badge:
-          "https://img.shields.io/badge/Eclipse-FE7A16.svg?style=plastic&logo=Eclipse&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/eclipse/eclipse-original.svg",
       },
       {
         name: "Jupyter Notebook",
         badge:
-          "https://img.shields.io/badge/Jupyter-F37626?style=plastic&logo=Jupyter&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/jupyter/jupyter-original.svg",
       },
       {
         name: "SonarQube",
         badge:
-          "https://img.shields.io/badge/SonarQube-4E9BCD?style=plastic&logo=SonarQube&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/sonarqube/sonarqube-original.svg",
       },
       {
         name: "Swagger",
         badge:
-          "https://img.shields.io/badge/Swagger-%2385EA2D.svg?style=plastic&logo=Swagger&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/swagger/swagger-original.svg",
       },
     ],
   },
@@ -272,32 +271,32 @@ export const skills: SkillCategoryGroup[] = [
       {
         name: "SQL",
         badge:
-          "https://img.shields.io/badge/SQL-%2300758F.svg?style=plastic&logo=amazon%20dynamodb&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/sql/sql-original.svg",
       },
       {
         name: "MongoDB",
         badge:
-          "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=plastic&logo=mongodb&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg",
       },
       {
         name: "MySQL",
         badge:
-          "https://img.shields.io/badge/MySQL-%2300f.svg?style=plastic&logo=mysql&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg",
       },
       {
         name: "Postgres",
         badge:
-          "https://img.shields.io/badge/PostgreSQL-%23336791.svg?style=plastic&logo=postgresql&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postgresql/postgresql-original.svg",
       },
       {
         name: "SQLite",
         badge:
-          "https://img.shields.io/badge/SQLite-%23003B57.svg?style=plastic&logo=sqlite&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/sqlite/sqlite-original.svg",
       },
       {
         name: "Microsoft SQL Server",
         badge:
-          "https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=plastic&logo=microsoft%20sql%20server&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/microsoftsqlserver/microsoftsqlserver-original.svg",
       },
     ],
   },
@@ -307,17 +306,17 @@ export const skills: SkillCategoryGroup[] = [
       {
         name: "Windows",
         badge:
-          "https://img.shields.io/badge/Windows-0078D6?style=plastic&logo=windows&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/windows11/windows11-original.svg",
       },
       {
         name: "Linux",
         badge:
-          "https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/linux/linux-original.svg",
       },
       {
         name: "MacOS",
         badge:
-          "https://img.shields.io/badge/mac%20os-000000?style=plastic&logo=apple&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/apple/apple-original.svg",
       },
     ],
   },
@@ -327,52 +326,52 @@ export const skills: SkillCategoryGroup[] = [
       {
         name: "Object-Oriented Programming",
         badge:
-          "https://img.shields.io/badge/OOP-%23007396.svg?style=plastic&logo=oop&logoColor=white&color=1a73e8",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/oop/oop-original.svg",
       },
       {
         name: "Data Structures",
         badge:
-          "https://img.shields.io/badge/Data%20Structures-%23007396.svg?style=plastic&logo=data-structures&logoColor=white&color=3a86ff",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/datastructures/datastructures-original.svg",
       },
       {
         name: "Algorithms",
         badge:
-          "https://img.shields.io/badge/Algorithms-%23007396.svg?style=plastic&logo=algorithms&logoColor=white&color=4c6ef5",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/algorithms/algorithms-original.svg",
       },
       {
         name: "RESTful API",
         badge:
-          "https://img.shields.io/badge/RESTful%20API-%23007396.svg?style=plastic&logo=restful-api&logoColor=white&color=3f51b5",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/rest/rest-original.svg",
       },
       {
         name: "CI/CD",
         badge:
-          "https://img.shields.io/badge/CI/CD-%23007396.svg?style=plastic&logo=ci/cd&logoColor=white&color=1a73e8",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/cicd/cicd-original.svg",
       },
       {
         name: "Travis CI",
         badge:
-          "https://img.shields.io/badge/Travis%20CI-3EAAAF?style=plastic&logo=travis-ci&logoColor=white",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/travis/travis-original.svg",
       },
       {
         name: "Unit Testing",
         badge:
-          "https://img.shields.io/badge/Unit%20Testing-%23007396.svg?style=plastic&logo=unit-testing&logoColor=white&color=3a86ff",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/unittest/unittest-original.svg",
       },
       {
         name: "Agile Methodologies",
         badge:
-          "https://img.shields.io/badge/Agile-009FDA?style=plastic&logo=agile&logoColor=white&color=009FDA",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/agile/agile-original.svg",
       },
       {
         name: "Design Patterns",
         badge:
-          "https://img.shields.io/badge/Design%20Patterns-%23007396.svg?style=plastic&logo=design-patterns&logoColor=white&color=2bbc8a",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/designpatterns/designpatterns-original.svg",
       },
       {
         name: "Multithreading",
         badge:
-          "https://img.shields.io/badge/Multithreading-%23007396.svg?style=plastic&logo=multithreading&logoColor=white&color=4c6ef5",
+          "https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/multithreading/multithreading-original.svg",
       },
     ],
   },
