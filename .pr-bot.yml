@@ -1,0 +1,12 @@
+rules:
+  - name: "General PR Review"
+    condition:
+      include:
+        - ".*"
+      exclude:
+        - ".github/"
+        - "node_modules/"
+        - "package-lock.json"
+    approvalsRequired: 1
+    reviewers:
+      - user: hasanerdemak
